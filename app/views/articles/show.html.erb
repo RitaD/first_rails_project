@@ -1,3 +1,5 @@
+<h1>Article</h1>
+
 <p>
   <strong>Title:</strong>
   <%= @article.title %>
@@ -8,28 +10,14 @@
   <%= @article.text %>
 </p>
 
-<h2>Best comments</h2>
-
-<%= render partial: 'comments/best_comment', collection: @article.best_comments %>
+<%= link_to 'Back', articles_path %> |
+<%= link_to 'Edit', edit_article_path(@article) %>
 
 <h2>Comments</h2>
-
 <%= render @article.plain_comments %>
-
------------------
-
-<% @article.comments.each do |comment| %>
-  <%# render comment %>
-<% end %>
-
------------------
-
-<% @article.comments.each do |comment| %>
-  <%# render 'comments/comment', comment: comment %>
-<% end %>
  
 <h2>Add a comment:</h2>
 <%= render 'comments/form' %>
- 
-<%= link_to 'Back', articles_path %> |
-<%= link_to 'Edit', edit_article_path(@article) %>
+
+<h2>Best comments</h2>
+<%= render partial: 'comments/best_comment', collection: @article.best_comments %>
