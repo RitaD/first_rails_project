@@ -14,20 +14,8 @@
 <%= link_to 'Edit', edit_article_path(@article) %>
 
 <h2>Comments</h2>
-
 <%= render @article.comments %>
 
------------------
-
-<% @article.comments.each do |comment| %>
-  <%# render comment %>
-<% end %>
-
------------------
-
-<% @article.comments.each do |comment| %>
-  <%# render 'comments/comment', comment: comment %>
-<% end %>
  
 <h2>Add a comment:</h2>
 <%= render 'comments/form' %>

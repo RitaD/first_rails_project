@@ -14,7 +14,7 @@
                data: { confirm: 'Are you sure?' } %>
 </p>
 
-<h4>Add a comment to comment:</h4>
+<h4>Add a comment to this comment:</h4>
 <%= form_for([@article, comment, comment.comments.build]) do |f| %>
   <p>
     <%= f.label :commenter %><br>
@@ -26,5 +26,17 @@
   </p>
   <p>
     <%= f.submit %>
+  </p>
+<% end %>
+
+<% comment.comments.each do |sub_comment| %>
+  <p>
+    <strong>Commenter:</strong>
+    <%= sub_comment.commenter %>
+  </p>
+   
+  <p>
+    <strong>Comment:</strong>
+    <%= sub_comment.body %>
   </p>
 <% end %>
