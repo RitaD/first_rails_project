@@ -6,8 +6,4 @@ class Article < ActiveRecord::Base
   def best_comments
     comments.first(2)
   end
-
-  def plain_comments
-    comments - best_comments
-  end
 end
