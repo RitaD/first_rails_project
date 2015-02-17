@@ -12,17 +12,9 @@
                data: { confirm: 'Are you sure?' } %>
 </p>
 
-<% comment.comments.each do |sub_comment| %>
-  <h5>
-    <%= sub_comment.commenter.capitalize %> Risponde:
-  </h5>
-   
-  <p>
-    <%= sub_comment.body %>
-  </p>
-<% end %>
+<%= render partial: 'comments/comment', collection: comment.comments %>
 
-<h4>Rispondi :</h4>
+<h4>Reply :</h4>
 <%= form_for([@article, comment, comment.comments.build]) do |f| %>
   <p>
     <%= f.label :commenter %><br>
