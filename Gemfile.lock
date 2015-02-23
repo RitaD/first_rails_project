@@ -42,6 +42,8 @@ GEM
     coffee-script-source (1.7.0)
     erubis (2.7.0)
     execjs (2.2.0)
+    faker (1.4.3)
+      i18n (~> 0.5)
     hike (1.2.3)
     i18n (0.6.9)
     jbuilder (2.1.1)
@@ -124,13 +126,14 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
+  faker (~> 1.4)
   jbuilder (~> 2.0)
   jquery-rails
   paperclip (~> 4.2)
   rails (= 4.1.1)
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
-  seedbank (~> 0.3.0)
+  seedbank (~> 0.3)
   spring
   sqlite3
   turbolinks

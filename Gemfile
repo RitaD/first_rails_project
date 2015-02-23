@@ -38,8 +38,10 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-#Paperclip gem
-gem "paperclip", "~> 4.2"
+gem "paperclip", "~> 4.2" 
 
-gem "seedbank", "~> 0.3.0"
+group :development do
+  gem "seedbank", "~> 0.3" 
+  gem "faker", "~> 1.4"
+end
 
