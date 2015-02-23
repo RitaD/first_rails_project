@@ -8,4 +8,8 @@ class Article < ActiveRecord::Base
   def best_comments
     comments.first(2)
   end
+
+  def formatted_date
+    self.created_at.strftime("%d/%m/%Y")
+  end
 end
