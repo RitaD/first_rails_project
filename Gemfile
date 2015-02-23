@@ -41,3 +41,5 @@ gem 'spring',        group: :development
 #Paperclip gem
 gem "paperclip", "~> 4.2"
 
+gem "seedbank", "~> 0.3.0"
+
