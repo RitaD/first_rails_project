@@ -24,3 +24,29 @@
     }
   }
 }
+
+.article-show {
+  .article-title {
+    font-weight: 500;
+    margin: 15px 0 10px;
+    border-bottom: 1px solid #e1e1e1;
+    line-height: 55px;
+  }
+
+  .article-create {
+    font-size: 12px;
+    margin: 0 0 5px;
+    text-align: right;
+    font-weight: lighter;
+  }
+
+  .article-image {
+    float: left;
+    margin: 0 20px;
+  }
+
+  .article-text {
+    font-size: 15px;
+    font-weight: lighter;
+  }
+}
