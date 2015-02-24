@@ -1,1 +1,7 @@
-
+@mixin form-style {
+  border: 1px solid #b9b9b9;
+  color: #9d9c9c;
+  outline: none;
+  font-size: 12px;
+  min-width: 250px;
+}
