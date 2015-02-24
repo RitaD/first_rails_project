@@ -8,14 +8,13 @@
     <%= comment.body %>
   </p>
 
-  <p>
-    <a href="" class="comment-reply">Reply</a>
+  <p class="comment-reply">
+    <a href="" class="comment-reply-link">Reply</a>
   </p>
 
   <%= render partial: 'comments/comment', collection: comment.comments %>
 
   <div class="comment-form">
-    <h4>Reply :</h4>
     <%= form_for([@article, comment, comment.comments.build]) do |f| %>
       <p>
         <%= f.label :commenter %><br>
