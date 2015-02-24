@@ -44,3 +44,5 @@ group :development do
   gem "faker", "~> 1.4"
 end
 
+gem 'high_voltage', '~> 2.2'
+
