@@ -12,4 +12,13 @@ class Article < ActiveRecord::Base
   def formatted_date
     self.created_at.strftime("%d/%m/%Y")
   end
+
+  def self.text_search(query)
+    if query.present?
+      where("title @@ :q or text @@ :q", q: query)
+    else
+      all
+    end
+  end
+
 end

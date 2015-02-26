@@ -1,1 +1,17 @@
 <h1>Home</h1>
+
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+
+<div class="artilces-search">
+  <h4 class="artilces-search-title">Search for article</h4>
+
+  <div class="search-form">
+    <%= form_tag articles_path, method: :get do %>
+      <p>
+        <%= text_field_tag :query, params[:query] %>
+        <%= submit_tag "Search", name: nil %>
+      </p>
+    <% end %>
+  </div>
+  
+</div>
