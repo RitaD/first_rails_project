@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/nebulab/active_link_to.git
+  revision: 7cc09df8d0eec749ffed8ee7c175fa0fe6f0dde7
+  branch: master
+  specs:
+    active_link_to (1.0.1)
+      actionpack
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -14,8 +22,6 @@ GEM
       activesupport (= 4.1.1)
       builder (~> 3.1)
       erubis (~> 2.7.0)
-    active_link_to (1.0.2)
-      actionpack
     activemodel (4.1.1)
       activesupport (= 4.1.1)
       builder (~> 3.1)
@@ -126,7 +132,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  active_link_to (~> 1.0)
+  active_link_to!
   coffee-rails (~> 4.0.0)
   faker (~> 1.4)
   high_voltage (~> 2.2)
