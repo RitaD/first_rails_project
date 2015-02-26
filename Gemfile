@@ -46,3 +46,4 @@ end
 
 gem 'high_voltage', '~> 2.2'
 
+gem 'active_link_to', '~> 1.0'
