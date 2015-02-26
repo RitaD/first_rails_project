@@ -1,6 +1,8 @@
 .navigation {
   height: 60px;
   border-bottom: 1px solid #f6f6f6;
+  margin: 10px 0 40px;
+  
   ul {
     padding: 0;
     
@@ -13,8 +15,12 @@
         color: #f26868;
         text-decoration: none;
         font-family: 'Open Sans', sans-serif;
-        padding: 0 25px;
+        padding: 0 25px 14px;
         text-transform: uppercase;
+
+        &.active {
+          border-bottom: 5px solid #f26868;
+        }
       }
     }
   }

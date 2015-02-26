@@ -1,7 +1,7 @@
 <nav class="navigation">
   <ul>
-  <li><%= link_to 'Home', page_path('home') %></li>
-  <li><%= link_to 'Articoli', articles_path %></li>
-  <li><%= link_to 'Write your article', new_article_path %></li>
+    <li><%= active_link_to 'Home', page_path('home') %></li>
+    <li><%= active_link_to 'Articoli', articles_path, active: :exclusive %></li>
+    <li><%= active_link_to 'Write your article', new_article_path, active: :exclusive %></li>
   </ul>
 </nav>
